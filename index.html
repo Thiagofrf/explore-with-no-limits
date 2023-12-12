@@ -56,20 +56,23 @@
          <section>
             <div class="form-area">
                 <h2>Send us a message</h2>
-                <form>
+                <form id="message-form">
                     <fieldset>
-                        <label for=""><img src="/assets/images/person.svg" alt="User Icon - Pink"> Your name</label>
-                        <input type="text" name="" id="">
+                        <label class="name-input" for="name-input"><img src="/assets/images/person.svg" alt="User Icon - Pink"> Your name</label>
+                        <input class="name-input" type="text" name="name-input" id="name-input" >
                     </fieldset>
                     <fieldset>
-                        <label for=""><img src="/assets/images/at.svg" alt="Email Icon - Pink"> Email</label>
-                        <input type="email" name="" id="">
+                        <label class="email-input" for="email-input"><img src="/assets/images/at.svg" alt="Email Icon - Pink"> Email</label>
+                        <input class="email-input" type="email" name="email-input" id="email-input">
                     </fieldset>
                     <fieldset>
-                        <textarea name="" id="" placeholder="Write your message here..."></textarea>
+                        <textarea class="text-area" name="text-area" id="text-area" placeholder="Write your message here..."></textarea>
                     </fieldset>
-                    <button type="submit">Send Message</button>
                 </form>
+                <button onclick="submitFormHandler()">Send Message</button>
+            </div>
+            <div class="send-success">
+                <h2>O formulário foi enviado com sucesso</h2>
             </div>
             <div class="form-bg-area">
                 <img src="/assets/images/form-bg.png" alt="Background image full of pink growing stars">
